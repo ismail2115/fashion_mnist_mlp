@@ -35,7 +35,6 @@ print(f"Using device: {DEVICE}")
 # -----------------------
 transform = transforms.Compose([
     transforms.ToTensor(),  # scales to [0,1] and converts to torch.Tensor
-    # No normalization to mean/std required by assignment; pixel scaling to [0,1] is enough
 ])
 
 train_dataset = datasets.FashionMNIST(root="data", train=True, download=True, transform=transform)
